@@ -1,0 +1,10 @@
+html body {
+ background: black; 
+ color: white;
+ font-family: 'Roboto', sans-serif;
+}
+
+input {
+  border-radius: 10px;
+  color: gray;
+}
