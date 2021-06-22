@@ -7,7 +7,7 @@ app.use(express.static('public'));
 app.get('/', function (req, res) {
   res.sendFile(__dirname+ "/index.html");
 });
- app.post('/en', function (req, res){
+ app.post('/en', async (req, res) => {
    console.log(req.body);
    if(req.body.uri){
      return res.json({ success: true, output: Buffer.from(req.body.uri).toString('base64') });
@@ -16,7 +16,7 @@ app.get('/', function (req, res) {
    }
  });
 
- app.post('/de', function (req, res){
+ app.post('/de', async (req, res) => {
    if(req.body.uri){
      return res.json({ success: true, output: Buffer.from(req.body.uri).toString('ascii')  });
    } else {    
