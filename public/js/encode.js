@@ -58,7 +58,6 @@ text =  text.split("M").join("6 ");
   if(text.includes("N")){
  text = text.split("N").join("66 ");    
  }}if(text.includes("o")||text.includes("O")){
-    
  text =  text.split("o").join("666 ");
  if(text.includes("O")){
 text =  text.split("O").join("666 ");    
@@ -107,12 +106,10 @@ text =  text.split("Y").join("999 ");
 if(text.includes("Z")){
 text =  text.split("Z").join("9999 ");    
  }    
-  }if(text.includes("+")){
-    
+  }if(text.includes("+")){  
     text = text.split("+").join("0 ");
   }
-  return text;
-  
+  return text; 
 }
 
 function endensub(){
@@ -120,8 +117,7 @@ function endensub(){
   console.log(h);
  let data = {
    uri: h,
-   hello: "hii"
- };
+    };
 if(h){
 fetch("/en", {
        method: "POST",
