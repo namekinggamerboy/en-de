@@ -44,7 +44,6 @@
     </div><br>
     <a class="btn btn-success" onclick="endensub();">Output</a>
 <script>
-
 function endensub(){
   let h = document.getElementById('endentext').value;
   console.log(h);
@@ -76,7 +75,6 @@ alert("😅 | try later...");
 alert("Enter Some World!");
 }
 }
-
 </script>
 </div>
   
@@ -86,7 +84,41 @@ alert("Enter Some World!");
     <div style="width: 20rem; height: 2rem;">
   <input id="enddetext" class="form-control" type="number" style="background: none; border-radius: 10px;" placeholder="End to end decode Number">
     </div><br>
-    <a class="btn btn-success" onclick="enddesub();">Output</a></div>
+    <a class="btn btn-success" onclick="enddesub();">Output</a>
+<script>
+function enddesub(){
+  let h = document.getElementById('enddetext').value;
+  console.log(h);
+ let data = {
+   uri: h,
+   hell: "yo",
+   gh: "go",
+   php: "php"
+    };
+if(h){
+fetch("/en", {
+       method: "POST",
+       headers: {
+      'Content-Type': 'application/json'
+    },
+       body: JSON.stringify(data)
+    }).then(body => body.json()).then(body => {
+
+if (body.success) {
+$("#output").text(body.output);
+} else {
+alert("😅 | try later...");
+}
+}).catch(e => {
+  console.log(e);
+  alert("Server problem");
+  });
+} else {
+alert("Enter Some World!");
+}
+}
+</script>
+</div>
   
 </center>
   <br><br>
