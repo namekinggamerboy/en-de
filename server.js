@@ -1,11 +1,13 @@
 const express = require('express');
 const app = express();
+app.locals.domain = "encode-decod.herokuapp.com";
+app.engine("html", require("ejs").renderFile);
+  app.set("view engine", "html");
 
-app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 app.get('/', function (req, res) {
-  res.sendFile(__dirname+ "/index.html");
+  res.render(__dirname+ "/index.ejs",{ res, req });
 });
  app.post('/en', async (req, res) => {
   
