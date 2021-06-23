@@ -5,6 +5,10 @@ const session = require("express-session");
 const app = express();
 
 app.use(morgan("dev")).use(bodyParser.json()).use(bodyParser.urlencoded({ extended: true }));
+app.set("trust proxy", 5);
+
+  app.use(session({ secret: "OP ENCODE & DECODE", resave: false, saveUninitialized: false })); 
+  
 app.locals.domain = "encode-decod.herokuapp.com";
 app.engine("html", require("ejs").renderFile);
   app.set("view engine", "html");
