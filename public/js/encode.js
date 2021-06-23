@@ -119,26 +119,24 @@ function endensub(){
    uri: h,
     };
 if(h){
-fetch("/en", {
-       method: "POST",
-       headers: {
-      'Content-Type': 'application/json'
-    },
-       body: JSON.stringify(data)
-    }).then(body => body.json()).then(body => {
-
+  $.ajax({
+      type: "POST",
+      url: "/en",
+      data,
+      dataType: "json",
+      contentType: "application/json",
+      success: body => {
+  
 if (body.success) {
 $("#output").text(body.output);
 } else {
 alert("😅 | try later...");
 }
-}).catch(e => {
-  console.log(e);
-  alert("Server problem");
-  });
-} else {
-alert("Enter Some World!");
-}
+  },
+      error: () => {
+ alert("❌ | Server Problem ");  
+   }
+    });
 }
 
 function sub(){
