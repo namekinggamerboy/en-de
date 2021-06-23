@@ -45,7 +45,40 @@
     <div style="width: 20rem; height: 2rem;">
   <input id="endentext" class="form-control" type="text" style="background: none; border-radius: 10px;" placeholder="End to end Encode Text">
     </div><br>
-    <a class="btn btn-success" onclick="endensub();">Output</a></div>
+    <a class="btn btn-success" onclick="endensub();">Output</a>
+<script>
+
+function endensub(){
+  let h = document.getElementById('endentext').value;
+  console.log(h);
+ let data = {
+   uri: h
+    };
+if(h){
+fetch("/en", {
+       method: "POST",
+       headers: {
+      'Content-Type': 'application/json'
+    },
+       body: JSON.stringify(data)
+    }).then(body => body.json()).then(body => {
+
+if (body.success) {
+$("#output").text(body.output);
+} else {
+alert("😅 | try later...");
+}
+}).catch(e => {
+  console.log(e);
+  alert("Server problem");
+  });
+} else {
+alert("Enter Some World!");
+}
+}
+
+</script>
+</div>
   
   <div id="enddecode">
     <b>ENDTO  END DECODE</b>
