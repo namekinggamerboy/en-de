@@ -1,5 +1,57 @@
 function de(text){
+  if(text.includes("")){
 
+} if(text.includes("")){
+
+} if(text.includes("")){
+
+} if(text.includes("")){
+
+} if(text.includes("")){
+
+} if(text.includes("")){
+
+} if(text.includes("")){
+
+} if(text.includes("")){
+
+} if(text.includes("")){
+
+} if(text.includes("")){
+
+} if(text.includes("")){
+
+} if(text.includes("")){
+
+} if(text.includes("")){
+
+} if(text.includes("")){
+
+} if(text.includes("")){
+
+} if(text.includes("")){
+
+} if(text.includes("")){
+
+} if(text.includes("")){
+
+} if(text.includes("")){
+
+} if(text.includes("")){
+
+} if(text.includes("")){
+
+} if(text.includes("")){
+
+} if(text.includes("")){
+
+} if(text.includes("")){
+
+} if(text.includes("")){
+
+} if(text.includes("")){
+}
+ return text;
 }
 
 function enddesub(text){
