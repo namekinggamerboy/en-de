@@ -112,37 +112,6 @@ text =  text.split("Z").join("9999 ");
   return text; 
 }
 
-function endensub(){
-  let h = document.getElementById('endentext').value;
-  console.log(h);
- let data = {
-   uri: h,
-    };
-if(h){
-  $.ajax({
-      type: "POST",
-      url: "/en",
-      data,
-      dataType: "json",
-      contentType: "application/json",
-      success: body => {
-  
-if (body.success) {
-$("#output").text(body.output);
-} else {
-alert("😅 | try later...");
-}
-  },
-      error: () => {
- alert("❌ | Server Problem ");  
-   }
-    });
-  } else {
-  alert("❌ | Enter something...");  
-
-   }
-}
-
 function sub(){
  let h = $("#entext").val();
  
