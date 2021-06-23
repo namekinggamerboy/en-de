@@ -1,12 +1,9 @@
 html {
-  font: 5vmin/1.3 Serif;
-  overflow: hidden;
   background: black;
   color: white;
 }
 
 body, head {
-  font-size: 52px;
   color: white;
 }
 
