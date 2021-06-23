@@ -137,6 +137,10 @@ alert("😅 | try later...");
  alert("❌ | Server Problem ");  
    }
     });
+  } else {
+  alert("❌ | Enter something...");  
+
+   }
 }
 
 function sub(){
