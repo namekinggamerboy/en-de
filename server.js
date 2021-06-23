@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
   res.render(__dirname+ "/index.ejs",{ res, req });
 });
  app.post('/en', async (req, res) => {
-  
+  console.log(req.body);
    if(req.body && req.body.uri){
      return res.json({ success: true, output: Buffer.from(req.body.uri).toString('base64') });
    } else {    
