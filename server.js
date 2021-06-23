@@ -29,7 +29,7 @@ app.get('/', function (req, res) {
 
  app.post('/de', async (req, res) => {
    if(req.body && req.body.uri){
-     return res.json({ success: true, output: Buffer.from(req.body.uri).toString('ascii')  });
+     return res.json({ success: true, output: Buffer.from(req.body.uri, 'base64').toString('ascii')  });
    } else {    
   return res.json({ success: false });
    }
