@@ -86,7 +86,7 @@ alert("Enter End To End Encode!");
 }
 
  function dsub(){
- let h = $("#detext").val();
+ let h = $("#dntext").val();
   if(!h){
     $("#output").text("Enter Something..");
   } else {   
