@@ -1,5 +1,8 @@
-function de(text){
-  if(text.includes("2")){
+function de(tet){
+ 
+  for (var text in tet) {
+
+if(text.includes("2")){
 
 } if(text.includes("22")){
 
@@ -54,7 +57,9 @@ function de(text){
 } if(text.includes("0")){
 
 }
- return text;
+tet = text;
+}
+ return tet;
 }
 
 function enddesub(text){
