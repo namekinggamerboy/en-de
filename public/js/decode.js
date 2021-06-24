@@ -1,55 +1,58 @@
 function de(text){
-  if(text.includes("")){
+  if(text.includes("2")){
 
-} if(text.includes("")){
+} if(text.includes("22")){
 
-} if(text.includes("")){
+} if(text.includes("222")){
 
-} if(text.includes("")){
+} if(text.includes("3")){
 
-} if(text.includes("")){
+} if(text.includes("33")){
 
-} if(text.includes("")){
+} if(text.includes("333")){
 
-} if(text.includes("")){
+} if(text.includes("4")){
 
-} if(text.includes("")){
+} if(text.includes("44")){
 
-} if(text.includes("")){
+} if(text.includes("444")){
 
-} if(text.includes("")){
+} if(text.includes("5")){
 
-} if(text.includes("")){
+} if(text.includes("55")){
 
-} if(text.includes("")){
+} if(text.includes("555")){
 
-} if(text.includes("")){
+} if(text.includes("6")){
 
-} if(text.includes("")){
+} if(text.includes("66")){
 
-} if(text.includes("")){
+} if(text.includes("666")){
 
-} if(text.includes("")){
+} if(text.includes("7")){
 
-} if(text.includes("")){
+} if(text.includes("77")){
 
-} if(text.includes("")){
+} if(text.includes("777")){
 
-} if(text.includes("")){
+} if(text.includes("7777")){
 
-} if(text.includes("")){
+} if(text.includes("8")){
 
-} if(text.includes("")){
+} if(text.includes("88")){
 
-} if(text.includes("")){
+} if(text.includes("888")){
 
-} if(text.includes("")){
+} if(text.includes("9")){
 
-} if(text.includes("")){
+} if(text.includes("99")){
 
-} if(text.includes("")){
+} if(text.includes("999")){
 
-} if(text.includes("")){
+} if(text.includes("9999")){
+
+} if(text.includes("0")){
+
 }
  return text;
 }
