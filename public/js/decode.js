@@ -1,7 +1,5 @@
 function de(tet){
- 
   for (var text in tet) {
-
 if(text.includes("2 ")){
 text = text.split("2 ").join("a "); 
 } if(text.includes("22 ")){
